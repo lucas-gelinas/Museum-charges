@@ -10,7 +10,7 @@ function check () {
   day = document.getElementById('userday').value
   day = parseInt(day)
 
-  if ((day == 'Tuesday' || day == 'Thursday') || (age > 12 && age < 21)) {
+  if ((day === 'Tuesday' || day === 'Thursday') || (age > 12 && age < 21)) {
     document.getElementById('response').innerHTML = 'You are eligble for a discount today!'
   } else {
     document.getElementById('response').innerHTML = 'You will need to pay full price today.'
